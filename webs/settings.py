@@ -132,7 +132,7 @@ CHANNEL_LAYERS = {
     'default' : {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            'hosts': [ ('127.0.0.1' , 6379) ],
+            'hosts': [ ('redistogo:6d93131e3f247da52e6d853ac88d0b8e@scat.redistogo.com' , 11918) ],
         },
     },
 }
