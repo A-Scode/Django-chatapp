@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.mainform{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height:100vh;
+    background-image: linear-gradient(to bottom right , rgba(204, 13, 221, 0.753) ,red );
+}
+.form{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.247);
+    width:300px;
+    height: 500px;
+    min-width:250px;
+    justify-content: center;
+    place-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(20, 236, 252, 0.856);
+}
+
+.usertab , .roomtab{
+    margin:30px;
+    
+}
+
+.subtab{
+    display: flex;
+    justify-content: center;
+}
+
+input[type= "submit"]{
+    justify-self: center;
+    width:80px;
+    color:white;
+    text-align: left;
+    font-weight: bold;
+    text-indent: 10px;
+    height:30px;
+    background-color: rgb(0, 183, 255);
+    background-image: url(loginicon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 18px 18px;
+    background-position-x: 50px;
+    border:0;
+    border-radius: 10px;
+    outline:none;
+    
+
+}
+
+input[type= "text"]{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border:0px;
+    border-bottom: 2px solid rgba(114, 114, 114, 0.575);
+    border-bottom-width: 90% ;
+    outline: none;
+    height: 25px;
+    transition: all 0.5s ease-out;
+    background-color: rgba(255, 255, 255, 0);
+    text-indent: 25px;
+}
+input[type= "text"]:focus{
+    border-bottom-color:rgb(13, 245, 44) ;
+
+}
+#user{
+    background-image: url(usernameicon.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+#room{
+    background-image: url(roomicon.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+div.logo{
+    display: block;
+    transform:scale(0.3);
+    position: absolute;
+    top:10rem;
+    place-items: center;
+}
+
+
+.logo path:nth-child(1){
+    stroke-dasharray: 821.1829223632812;
+    stroke-dashoffset: 821.1829223632812;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(2){
+    stroke-dasharray: 378.241455078125;
+    stroke-dashoffset: 378.241455078125;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(3){
+    stroke-dasharray: 443.09423828125;
+    stroke-dashoffset: 443.09423828125;
+    animation : strokeanimation 4s ease forwards;
+}
+
+.logo path:nth-child(4){
+    stroke-dasharray: 358.8349304199219;
+    stroke-dashoffset: 358.8349304199219;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(5){
+    stroke-dasharray: 372.15191650390625;
+    stroke-dashoffset: 372.15191650390625;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(6){
+    stroke-dasharray: 337.4284362792969;
+    stroke-dashoffset: 337.4284362792969;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(7){
+    stroke-dasharray: 512.59619140625;
+    stroke-dashoffset: 512.59619140625;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(8){
+    stroke-dasharray: 378.2422180175781;
+    stroke-dashoffset: 378.2422180175781;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(9){
+    stroke-dasharray: 317.81890869140625;
+    stroke-dashoffset: 317.81890869140625;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(10){
+    stroke-dasharray: 469.055908203125;
+    stroke-dashoffset: 469.055908203125;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(11){
+    stroke-dasharray: 494.5133972167969;
+    stroke-dashoffset: 494.5133972167969;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(12){
+    stroke-dasharray: 380.5845031738281;
+    stroke-dashoffset: 380.5845031738281;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(13){
+    stroke-dasharray: 317.81927490234375;
+    stroke-dashoffset: 317.81927490234375;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(14){
+    stroke-dasharray: 821.1829223632812;
+    stroke-dashoffset: 821.1829223632812;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(15){
+    stroke-dasharray: 378.241455078125;
+    stroke-dashoffset: 378.241455078125;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(16){
+    stroke-dasharray: 443.09423828125;
+    stroke-dashoffset: 443.09423828125;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(17){
+    stroke-dasharray: 358.8349304199219;
+    stroke-dashoffset: 358.8349304199219;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(18){
+    stroke-dasharray: 372.15191650390625;
+    stroke-dashoffset: 372.15191650390625;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(19){
+    stroke-dasharray: 337.4284362792969;
+    stroke-dashoffset: 337.4284362792969;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(20){
+    stroke-dasharray: 512.59619140625;
+    stroke-dashoffset: 512.59619140625;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(21){
+    stroke-dasharray: 378.2422180175781;
+    stroke-dashoffset: 378.2422180175781;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(22){
+    stroke-dasharray: 317.81890869140625;
+    stroke-dashoffset: 317.81890869140625;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(23){
+    stroke-dasharray: 469.055908203125;
+    stroke-dashoffset: 469.055908203125;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(24){
+    stroke-dasharray: 494.5133972167969;
+    stroke-dashoffset: 494.5133972167969;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(25){
+    stroke-dasharray: 380.5845031738281;
+    stroke-dashoffset: 380.5845031738281;
+    animation : strokeanimation 4s ease forwards;
+}
+.logo path:nth-child(26){
+    stroke-dasharray: 317.81927490234375;
+    stroke-dashoffset: 317.81927490234375;
+    animation : strokeanimation 4s ease forwards;
+}
+
+@keyframes strokeanimation{
+    to{
+        stroke-dashoffset:0;
+        stroke-dasharray: 150%;
+    }
+}
+
+
+
+path{
+    stroke-width: 10px;
+    /* fill:rgb(0, 225, 255); */
+
+}
+svg{
+    cursor: crosshair;
+}
+

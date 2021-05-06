@@ -1,0 +1,19 @@
+{
+    "name": "Websocket app",
+    "short_name": "ChatApp",
+    "theme_color": "#a50089",
+    "background_color": "#a50089",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "http://192.168.43.235:8000/",
+    "description": "This is websocket chat app for testing",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/faviconpng",
+            "sizes": "1024x1024",
+            "type": "image/png",
+            "purpose":"any maskable"
+        }
+    ]
+}

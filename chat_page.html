@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat room</title>
+    {%load static %}
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+ 
+    <link rel="stylesheet" href="{%static 'chat.css'%}">
+    <link rel="icon" type href="{%static 'favicon.svg'%}">
+</head>
+<body onload='getvars("{{R_N}}" , "{{user_name}}" )' >
+    <div class="chat_space">
+        <h1 align = 'center'><span></span> Chat</h1>
+    </div>
+
+    <div class="insend" id ="insendid" oninput="heightChange()">
+    <div id="input" placeholder = "Type Here" autofocus contenteditable></div>
+
+    <!-- <button  id = 'sub' onclick= 'send_message()'>Submit</button> -->
+    <input type="submit"   id = "sendbtn" value = "" onclick="send_message(document.querySelector('#input'))">
+  </div>
+
+    <br>
+
+    <div id="chats" onchange="scroll_to_bottom()">
+
+    </div>
+
+
+    <!-- <script>
+        let socket = new WebSocket(
+            'ws://'
+            +window.location.host
+            +'/'
+            +'{{R_N}}'
+        );
+
+socket.onopen = function(e) {
+  socket.send("New User has Enterd");
+};
+
+socket.onmessage = function(event) {
+  console.log(event)
+  document.getElementById('chats').innerHTML += event.data + '<br>';
+};
+
+socket.onclose = function(event) {
+  if (event.wasClean) {
+    alert(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+  } else {
+    // e.g. server process killed or network down
+    // event.code is usually 1006 in this case
+    alert('[close] your friend has left');
+  }
+};
+
+socket.onerror = function(error) {
+  alert(`An error occoured ${error.message}`);
+};
+
+
+
+function send_message(){
+
+    msg =  document.getElementById('msg').value + '<br>';
+
+    document.getElementById('msg').value = '';
+
+    socket.send(msg);
+
+};
+
+
+var msgbox = document.getElementById('msg');
+msgbox.addEventListener("keyup" , function (e){
+    if (e.keyCode === 13){
+      document.getElementById('sendbtn').click()
+    };
+}); 
+
+    </script> -->
+
+  </body>
+  <script src = "{% static 'chat_js.js'%}"></script>
+</html>
