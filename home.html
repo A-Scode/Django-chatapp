@@ -63,8 +63,8 @@
         </div>
 
     
-<form action="chat_page" onsubmit = "return room_validation(document.querySelector('#room'))" method="POST">
-    {% csrf_token %}
+<form action="chat_page" onsubmit = "return room_validation(document.querySelector('#room'))" method="GET">
+  
     <div class="usertab">
     
     <input id = 'user' type="text" placeholder="Username" name = "username" required>
