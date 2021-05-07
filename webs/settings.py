@@ -142,7 +142,7 @@ CHANNEL_LAYERS = {
 }
 
 import django_heroku
-django_heroku.settings(locals())
+django_heroku.settings(locals(), logging = True)
 
 LOGGING = {
     'version': 1,
