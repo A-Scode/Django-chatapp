@@ -7,7 +7,7 @@ window.addEventListener("load" ,openws)
 
 function openws(rid = 'dwq'){
     
-    if (window.location.protocol === "https"){ window.location.protocol = "http"}
+    if (window.location.protocol === "https:"){ window.location.protocol = "http:"}
 socket  = new WebSocket(
     "ws://"+ hostname +"/"+roomName)
 
