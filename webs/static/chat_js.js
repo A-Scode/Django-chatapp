@@ -7,7 +7,7 @@ window.addEventListener("load" ,openws)
 
 function openws(rid = 'dwq'){
 socket  = new WebSocket(
-    "wss://"+ hostname +"/"+roomName)
+    "ws://"+ hostname +"/"+roomName)
 
 console.log(rid)
 console.log(socket)
