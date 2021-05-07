@@ -5,8 +5,8 @@ from django.http import HttpResponse
 
 def chat_app(request):
     global room_name
-    room_name = request.POST['room_name']
-    user_name = request.POST['username']
+    room_name = request.GET['room_name']
+    user_name = request.GET['username']
 
     print("Room name :" , room_name)
     print("Username :" , user_name)
