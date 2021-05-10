@@ -3,16 +3,12 @@
     margin: 0;
     padding:0;
 }
-body{
-    height:-webkit-fill-available !important;
-
-}
 
 .mainform{
     display: flex;
     place-items: center;
     justify-content: center;
-    height:100%;
+    height: calc(100vh - calc(100vh - 100%));
     background-image: linear-gradient(to bottom right , rgba(204, 13, 221, 0.753) ,red );
 }
 .form{
