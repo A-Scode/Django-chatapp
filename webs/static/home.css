@@ -8,7 +8,7 @@
     display: flex;
     place-items: center;
     justify-content: center;
-    height:100vh;
+    height:100%;
     background-image: linear-gradient(to bottom right , rgba(204, 13, 221, 0.753) ,red );
 }
 .form{
