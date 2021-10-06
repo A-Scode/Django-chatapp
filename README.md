@@ -1,5 +1,5 @@
 # Django Websockect
-This project uses😌
+This project uses😊
 
 * python
     * Django
@@ -8,5 +8,7 @@ This project uses😌
 * HTML
 * CSS
 
+# Link to the Project
+URL - https://websocket-chat-shourya.herokuapp.com/
 
 
